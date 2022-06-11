@@ -34,9 +34,15 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: opacity 0.3s ease;
 	img {
 		max-width: 20px;
 		max-height: 20px;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 }
 .title {
@@ -84,8 +90,33 @@ body {
 		}
 	}
 }
+.logo {
+	width: 96px;
+	margin: 0 0 0 16px;
+	display: block;
+	img {
+		display: inline-block;
+		max-width: 100%;
+	}
+	@media (min-width: 768px) {
+		margin: 0 0 0 40px;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -20px;
+			background: #eaeaea;
+			border-radius: 1px;
+			height: 32px;
+			width: 2px;
+			transform: translate(0, -50%);
+		}
+	}
+}
 
 // Components
 @import "_header";
 @import "_top";
 @import "_about";
+@import "_menu";
