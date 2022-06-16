@@ -890,7 +890,19 @@ body {
 }
 
 .brands {
-  background: #f2f2f2;
+  background: #F8F8F8;
+}
+
+@media (min-width: 768px) {
+  .brands {
+    background: #f2f2f2;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brands {
+    background: #F8F8F8;
+  }
 }
 
 .brands__body {
