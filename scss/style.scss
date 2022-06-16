@@ -123,6 +123,7 @@ body {
 	font-weight: 700;
 	padding-left: 32px;
 	position: relative;
+	background: transparent;
 	&::before {
 		content: "";
 		position: absolute;
